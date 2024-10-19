@@ -1,0 +1,33 @@
+.user-item {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .user-content {
+    display: flex;
+    justify-content: space-between; /* Aligns items to the edges */
+    align-items: center; /* Centers items vertically */
+  }
+  
+  .user-info {
+    display: flex;
+    flex-direction: column; /* Stacks name and email vertically */
+  }
+  
+  .user-actions {
+    display: flex;
+    gap: 8px; /* Space between the icons */
+  }
+  
+  .view-button mat-icon {
+    color: blue; /* Color for view action */
+  }
+  
+  .edit-button mat-icon {
+    color: orange; /* Color for edit action */
+  }
+  
+  .delete-button mat-icon {
+    color: red; /* Color for delete action */
+  }
+  

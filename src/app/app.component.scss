@@ -1,0 +1,51 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #eee;
+}
+
+mat-sidenav-content {
+    flex: 1; 
+    display: flex;
+    flex-direction: column; 
+}
+
+.scrollable-content {
+    flex: 1; 
+    overflow-y: auto;  // Enable scrolling
+}
+
+.task-header {
+    position: sticky;
+    top: 0;
+    background-color: #3f51b5; 
+    color: white;
+    padding: 10px;
+    z-index: 1000; 
+
+    nav {
+        ul {
+            display: flex; 
+            padding: 0;
+            margin: 0;  // Reset margin to prevent layout shifts
+
+            li {
+                margin-right: 15px; 
+            }
+        }
+    }
+}
+
+.task-footer {
+    background-color: #3f51b5; 
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+  

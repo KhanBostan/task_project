@@ -1,0 +1,50 @@
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #8e9297; 
+    border-bottom: 1px solid #ccc; 
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+
+    h1 {
+        margin: 0;
+        flex: 1; 
+    }
+
+    nav {
+        flex: 1; 
+        text-align: center; 
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center; 
+        
+        li {
+            margin: 0 15px; 
+        }
+        
+        a {
+            text-decoration: none;
+            color: #007bff; 
+            
+            &:hover {
+                text-decoration: underline; 
+                cursor: pointer;
+            }
+        }
+    }
+
+    span {
+        margin-left: auto; 
+    }
+}
+
+

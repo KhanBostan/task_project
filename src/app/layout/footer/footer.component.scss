@@ -1,0 +1,15 @@
+.task-footer {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #8e9297; 
+    border-top: 1px solid #ccc; 
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); 
+    position: relative; 
+    p {
+        margin: 0; 
+        color: #6c757d; 
+        font-size: 14px; 
+    }
+}

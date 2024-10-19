@@ -1,0 +1,11 @@
+<form [formGroup]="formGroup">
+  
+    <mat-form-field appearance="fill">
+      <mat-label>Email</mat-label>
+      <input matInput formControlName="email">
+      <mat-error *ngIf="formGroup.get('email')?.invalid && formGroup.get('email')?.touched">
+        A valid email is required.
+      </mat-error>
+    </mat-form-field>
+</form>
+  

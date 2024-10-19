@@ -1,0 +1,30 @@
+<form [formGroup]="multiStepForm" (ngSubmit)="onSubmit()">
+    <mat-horizontal-stepper [linear]="true" #stepper>
+      <mat-step [stepControl]="stepOne">
+        <ng-template matStepLabel>Step 1</ng-template>
+        <app-step-one [formGroup]="stepOne"></app-step-one>
+        <div>
+          <button mat-button matStepperNext [disabled]="stepOne.invalid">Next</button>
+        </div>
+      </mat-step>
+  
+      <mat-step [stepControl]="stepTwo">
+        <ng-template matStepLabel>Step 2</ng-template>
+        <app-step-two [formGroup]="stepTwo"></app-step-two>
+        <div>
+          <button mat-button matStepperPrevious>Back</button>
+          <button mat-button matStepperNext [disabled]="stepTwo.invalid">Next</button>
+        </div>
+      </mat-step>
+  
+      <mat-step [stepControl]="stepThree">
+        <ng-template matStepLabel>Step 3</ng-template>
+        <app-step-three [formGroup]="stepThree"></app-step-three>
+        <div>
+          <button mat-button matStepperPrevious>Back</button>
+          <button mat-raised-button color="primary" type="submit">Submit</button>
+        </div>
+      </mat-step>
+    </mat-horizontal-stepper>
+  </form>
+  
